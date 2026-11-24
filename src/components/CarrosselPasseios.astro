@@ -1,0 +1,87 @@
+---
+import passeios from '../data/ingressos-home.json';
+---
+
+<section class="tickets-section" aria-labelledby="tickets-title">
+  <div class="container mx-auto px-4">
+    <div class="tickets-heading">
+      <h2 id="tickets-title">Ingressos e Atrações em Gramado e Canela</h2>
+      <a href="/ingressos">Ver todos os ingressos <span aria-hidden="true">&#8594;</span></a>
+    </div>
+    <div id="ingressos-grid" class="tickets-list">
+      {passeios.map((passeio, index) => (
+        <div data-passeio-card hidden={index >= 4}>
+          <a class="ticket-card" href={passeio.linkOficial} target="_blank" rel="noopener noreferrer">
+            <img src={passeio.imagem} alt={passeio.titulo} width="140" height="125" loading="lazy" decoding="async" />
+            <div class="ticket-information">
+              <h3>{passeio.titulo}</h3>
+              <p>{passeio.subtitulo}</p>
+              <strong>Comprar ingresso</strong>
+            </div>
+            <span class="ticket-arrow" aria-hidden="true">&#8594;</span>
+          </a>
+        </div>
+      ))}
+    </div>
+    <div class="tickets-controls">
+      <button id="ver-mais-ingressos" type="button" aria-controls="ingressos-grid" hidden={passeios.length <= 4}>Ver mais <span aria-hidden="true">&#8594;</span></button>
+      <button id="ver-menos-ingressos" type="button" aria-controls="ingressos-grid" hidden>Ver menos <span aria-hidden="true">&#8593;</span></button>
+    </div>
+  </div>
+</section>
+
+<style>
+  .tickets-section{background:transparent;padding:40px 0 48px;color:var(--clr-primary-900)}
+  .tickets-heading{display:flex;align-items:center;justify-content:space-between;gap:20px;margin-bottom:24px}
+  .tickets-heading h2{font-family:Georgia,serif;font-size:clamp(24px,2.5vw,36px);font-weight:700;line-height:1.2}
+  .tickets-heading>a{display:flex;align-items:center;gap:10px;font-size:13px;flex-shrink:0;max-width:140px}
+  .tickets-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+  .ticket-card{display:flex;align-items:center;gap:16px;height:100%;padding:16px;background:white;border-radius:22px;box-shadow:0 8px 24px color-mix(in srgb, var(--clr-primary-950) 3.14%, transparent);transition:box-shadow .2s}
+  .ticket-card:hover{box-shadow:0 8px 24px color-mix(in srgb, var(--clr-primary-950) 9.41%, transparent)}
+  .ticket-card img{width:100px;height:120px;object-fit:cover;border-radius:15px;flex-shrink:0}
+  .ticket-information{flex:1;min-width:0}
+  .ticket-information h3{font-size:17px;font-weight:700;margin-bottom:6px;color:var(--clr-dark-800)}
+  .ticket-information p{font-size:13px;line-height:1.5;color:var(--clr-dark-500);margin-bottom:8px}
+  .ticket-information strong{font-family:Georgia,serif;font-size:14px}
+  .ticket-arrow{display:grid;place-items:center;width:32px;height:36px;border-radius:12px;background:var(--clr-primary-50);font-size:22px;flex-shrink:0}
+  .tickets-controls{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-top:24px}
+  .tickets-controls button{background:var(--clr-primary-700);color:white;border-radius:999px;padding:12px 30px;font-weight:700}
+  .tickets-controls button:hover{background:var(--clr-primary-800)}
+  .tickets-controls button span{margin-left:12px}
+  .ticket-card:focus-visible,.tickets-heading a:focus-visible,.tickets-controls button:focus-visible{outline:3px solid var(--clr-accent-500);outline-offset:4px}
+  @media(max-width:767px){.tickets-list{grid-template-columns:1fr;gap:14px}.tickets-heading h2{font-size:24px}.tickets-heading>a{font-size:10px;max-width:88px}.ticket-card{gap:10px;padding:14px 12px}.ticket-card img{width:88px;height:106px}.ticket-information h3{font-size:15px}.ticket-information p{font-size:12px}.ticket-information strong{font-size:13px}}
+</style>
+
+<script>
+  function initIngressos() {
+    const grid = document.getElementById('ingressos-grid');
+    const moreButton = document.getElementById('ver-mais-ingressos');
+    const lessButton = document.getElementById('ver-menos-ingressos');
+    if (!grid || !moreButton || !lessButton || moreButton.dataset.initialized) return;
+
+    moreButton.dataset.initialized = 'true';
+    const cards = Array.from(grid.querySelectorAll<HTMLElement>('[data-passeio-card]'));
+    let visibleCount = cards.filter((card) => !card.hidden).length;
+
+    function updateCards() {
+      cards.forEach((card, index) => { card.hidden = index >= visibleCount; });
+      moreButton.hidden = visibleCount >= cards.length;
+      lessButton.hidden = visibleCount <= 4;
+    }
+
+    moreButton.addEventListener('click', () => {
+      visibleCount = Math.min(cards.length, visibleCount + 4);
+      updateCards();
+      if (moreButton.hidden) lessButton.focus({ preventScroll: true });
+    });
+
+    lessButton.addEventListener('click', () => {
+      visibleCount = Math.max(4, visibleCount - 4);
+      updateCards();
+      if (lessButton.hidden) moreButton.focus({ preventScroll: true });
+    });
+  }
+
+  initIngressos();
+  document.addEventListener('astro:page-load', initIngressos);
+</script>

@@ -1,0 +1,81 @@
+---
+const questions = [
+  {
+    question: 'Como faço minha reserva com a Ts Gramado Tur?',
+    answer: 'Escolha o serviço no site e envie sua solicitação pelo formulário ou pelo WhatsApp. Informe a data da viagem, o número de passageiros e o passeio ou transfer desejado. Nossa equipe confirma a disponibilidade, os valores e os próximos passos para concluir a reserva.',
+  },
+  {
+    question: 'Vocês fazem transfer entre Porto Alegre, Gramado e Canela?',
+    answer: 'Sim! Oferecemos transfer privativo entre Porto Alegre e Gramado ou Canela, incluindo a opção de ida e volta. Informe os dados do voo, o endereço da hospedagem e a quantidade de passageiros para organizar o transporte.',
+  },
+  {
+    question: 'O que significa contratar um passeio privativo?',
+    answer: 'No serviço privativo, o veículo é reservado para você e seus acompanhantes. O roteiro, os horários e os pontos de embarque são combinados com a equipe, conforme o serviço escolhido e a disponibilidade.',
+  },
+  {
+    question: 'Os ingressos das atrações estão incluídos no transporte?',
+    answer: 'Transporte e ingresso podem ser serviços separados. Confira o que está incluído na descrição da opção escolhida e confirme com a equipe antes de reservar. O site também tem uma seção de ingressos e atrações para ajudar no planejamento.',
+  },
+  {
+    question: 'Posso reservar meus passeios para o Natal Luz?',
+    answer: 'Sim! Entre em contato para organizar seus passeios e transfers durante a viagem de Natal Luz. Recomendamos consultar a disponibilidade com antecedência. Confirme também se a opção desejada inclui ingresso para algum espetáculo ou apenas transporte.',
+  },
+  {
+    question: 'Como são calculados os valores dos serviços?',
+    answer: 'Os valores variam conforme o serviço e a quantidade de passageiros. Há opções de transporte com preço por veículo e ingressos com preço por pessoa. Confira a modalidade indicada e solicite a confirmação do valor para a data desejada.',
+  },
+  {
+    question: 'O que preciso informar se viajar com crianças ou muitas bagagens?',
+    answer: 'Ao solicitar a reserva, informe as idades das crianças e a quantidade de malas, carrinhos e outros volumes. Assim, a equipe pode verificar o veículo adequado e a disponibilidade dos equipamentos necessários para o transporte.',
+  },
+  {
+    question: 'Como consulto as condições de pagamento, alteração ou cancelamento?',
+    answer: 'Consulte a equipe pelo WhatsApp antes de concluir a reserva. As condições devem ser confirmadas para o serviço e a data escolhidos. Se precisar alterar uma reserva, tenha em mãos os dados da contratação para facilitar o atendimento.',
+  },
+];
+const whatsappUrl = 'https://wa.me/5554996968659?text=' + encodeURIComponent('Olá! Tenho uma dúvida sobre os serviços da Ts Gramado Tur.');
+---
+
+<section id="faq" class="faq-section bg-primary-50 dark:bg-dark-900" aria-labelledby="faq-title">
+  <div class="faq-container">
+    <header class="faq-heading">
+      <p class="faq-eyebrow text-primary-700 dark:text-primary-200">Planeje sua viagem</p>
+      <h2 id="faq-title" class="text-primary-950 dark:text-white">Perguntas frequentes</h2>
+      <p class="text-dark-600 dark:text-dark-200">Tire suas dúvidas e prepare-se para aproveitar a Serra Gaúcha.</p>
+    </header>
+    <div class="faq-list">
+      {questions.map(({ question, answer }) => (
+        <details class="faq-item bg-white dark:bg-dark-800 border-primary-100 dark:border-dark-700">
+          <summary class="text-primary-950 dark:text-white">
+            <span>{question}</span>
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg>
+          </summary>
+          <p class="faq-answer text-dark-600 dark:text-dark-200">{answer}</p>
+        </details>
+      ))}
+    </div>
+    <p class="faq-contact text-dark-600 dark:text-dark-200">Ainda ficou com alguma dúvida? <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" class="text-primary-700 dark:text-primary-200">Fale com a gente pelo WhatsApp <span aria-hidden="true">→</span></a></p>
+  </div>
+</section>
+
+<style>
+  .faq-section{padding:80px 24px}
+  .faq-container{max-width:960px;margin:0 auto}
+  .faq-heading{text-align:center;margin-bottom:36px}
+  .faq-eyebrow{font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;margin-bottom:12px}
+  .faq-heading h2{font-size:clamp(28px,3.5vw,42px);font-weight:800;line-height:1.15;margin-bottom:14px;letter-spacing:-.03em}
+  .faq-heading>p:last-child{font-size:16px;line-height:1.7}
+  .faq-list{display:grid;gap:12px}
+  .faq-item{border-width:1px;border-style:solid;border-radius:18px;overflow:hidden}
+  summary{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:24px;cursor:pointer;list-style:none;font-size:16px;font-weight:700;line-height:1.5}
+  summary::-webkit-details-marker{display:none}
+  summary:focus-visible{outline:3px solid var(--clr-accent-500);outline-offset:-4px;border-radius:18px}
+  .faq-chevron{flex-shrink:0;width:20px;height:20px;transition:transform .2s}
+  details[open] .faq-chevron{transform:rotate(180deg)}
+  .faq-answer{padding:0 24px 24px;max-width:850px;font-size:15px;line-height:1.8}
+  .faq-contact{text-align:center;margin-top:28px;font-size:14px;line-height:1.8}
+  .faq-contact a{display:inline-block;font-weight:700;text-decoration:underline;text-underline-offset:4px}
+  .faq-contact a:focus-visible{outline:3px solid var(--clr-accent-500);outline-offset:4px}
+  @media(max-width:767px){.faq-section{padding:52px 16px}.faq-heading{margin-bottom:26px}.faq-heading>p:last-child{font-size:14px}summary{padding:20px 18px;font-size:15px;gap:14px}.faq-answer{padding:0 18px 20px;font-size:14px}}
+  @media(prefers-reduced-motion:reduce){.faq-chevron{transition:none}}
+</style>

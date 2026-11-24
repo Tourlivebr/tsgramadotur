@@ -1,0 +1,122 @@
+[
+{
+    "categoria":  "TRANSFER",
+    "href":  "/passeio/transfer-grande-desfile-de-natal",
+    "titulo":  "Transfer Grande Desfile de Natal",
+    "subtitulo":  "Translado para o espetáculo de carros alegóricos e personagens do Natal Luz, no Expogramado"
+},
+{
+    "categoria":  "TRANSFER",
+    "href":  "/passeio/transfer-nativitaten",
+    "titulo":  "Transfer Nativitaten",
+    "subtitulo":  "Translado para o espetáculo de música, luzes e águas do Natal Luz, no Serra Park"
+},
+    {
+        "titulo":  "Transfer IDA e VOLTA • Porto Alegre / Gramado ou Canela",
+        "subtitulo":  "Translado executivo de ida e volta entre Porto Alegre e Gramado/Canela",
+        "categoria":  "TRANSFER",
+        "href":  "/passeio/transfer-ida-volta-porto-alegre"
+    },
+    {
+        "titulo":  "City Tour Privativo",
+        "subtitulo":  "Roteiro personalizado com motorista/guia",
+        "categoria":  "CITY TOUR",
+        "href":  "/passeio/city-tour-privativo"
+    },
+    {
+        "titulo":  "Transporte Olivas",
+        "subtitulo":  "Translado para as Olivas de Gramado",
+        "categoria":  "TRANSFER",
+        "href":  "/passeio/transporte-olivas"
+    },
+    {
+        "titulo":  "Transporte Jolimont",
+        "subtitulo":  "Translado para a Vinícola Jolimont",
+        "categoria":  "TRANSFER",
+        "href":  "/passeio/transporte-jolimont"
+    },
+    {
+        "titulo":  "Transporte Sky Glass",
+        "subtitulo":  "Translado para a Skyglass Canela • Espera de até 1h30",
+        "categoria":  "TRANSFER",
+        "href":  "/passeio/transporte-sky-glass"
+    },
+    {
+        "titulo":  "Transporte Parque do Caracol",
+        "subtitulo":  "Translado para o Parque do Caracol • Espera de até 1h30",
+        "categoria":  "TRANSFER",
+        "href":  "/passeio/transporte-parque-do-caracol"
+    },
+    {
+        "titulo":  "Bondinhos Transporte",
+        "subtitulo":  "Translado para os Bondinhos Aéreos • Espera de até 1h30",
+        "categoria":  "TRANSFER",
+        "href":  "/passeio/bondinhos-transporte"
+    },
+    {
+        "titulo":  "City Tour Nova Petrópolis",
+        "subtitulo":  "Roteiro completo por Nova Petrópolis",
+        "categoria":  "CITY TOUR",
+        "href":  "/passeio/city-tour-nova-petropolis"
+    },
+    {
+        "titulo":  "Lumni Transporte",
+        "subtitulo":  "Translado para a experiência Lumni • Espera de até 2h",
+        "categoria":  "TRANSFER",
+        "href":  "/passeio/lumni-transporte"
+    },
+    {
+        "titulo":  "Trem Maria Fumaça - Privativo",
+        "subtitulo":  "Passeio de Maria Fumaça pela Serra Gaúcha",
+        "categoria":  "TREM",
+        "href":  "/passeio/maria-fumaca"
+    },
+    {
+        "titulo":  "Tour Vinhos e Sabores",
+        "subtitulo":  "Uma experiência especial pelos sabores, tradições e paisagens da Serra Gaúcha",
+        "categoria":  "CITY TOUR",
+        "href":  "/passeio/tour-vinhos-e-sabores"
+    },
+    {
+        "titulo":  "ParksNet Passaporte",
+        "subtitulo":  "Todos os parques da Serra Gaúcha em um só lugar",
+        "categoria":  "PASSEIOS E PARQUES",
+        "href":  "/parksnet"
+    },
+    {
+        "titulo":  "Kongo Pizzaria",
+        "subtitulo":  "Uma experiência animal em meio à selva",
+        "categoria":  "PIZZARIA TEMÁTICA",
+        "href":  "/kongo-pizzaria"
+    },
+    {
+        "titulo":  "Parque da Mônica",
+        "subtitulo":  "A magia da Vila da Mônica na Serra Gaúcha",
+        "categoria":  "PARQUE TEMÁTICO",
+        "href":  "/parque-da-monica"
+    },
+    {
+        "titulo":  "Era do Fogo Fondue Temático",
+        "subtitulo":  "A experiência mais cavernosa de Gramado",
+        "categoria":  "FONDUE TEMÁTICO",
+        "href":  "/era-do-fogo"
+    },
+    {
+        "titulo":  "Ferrovia Secreta Hector",
+        "subtitulo":  "Sequência de comida americana no trem mágico",
+        "categoria":  "GASTRONOMIA TEMÁTICA",
+        "href":  "/ferrovia-secreta"
+    },
+    {
+        "titulo":  "Hector Pizzaria",
+        "subtitulo":  "Rodízio de Discos de Sabor na Escola de Magia Ônyra",
+        "categoria":  "RODÍZIO DE PIZZA",
+        "href":  "/hector-pizzaria"
+    },
+    {
+        "titulo":  "Gatzz Fondue \u0026 Show",
+        "subtitulo":  "Dinner show de Broadway na Serra Gaúcha",
+        "categoria":  "DINNER SHOW",
+        "href":  "/gatzz"
+    }
+]

@@ -1,0 +1,178 @@
+<section id="quem-sou" class="home-hero" aria-labelledby="hero-title">
+  <img class="hero-poster" src="/images/natal-luz-banner.jpg" alt="" fetchpriority="high" />
+  <div class="hero-video" aria-hidden="true">
+    <iframe id="hero-video-player" data-src="https://www.youtube.com/embed/nfR59w-WDK4?autoplay=1&amp;mute=1&amp;controls=0&amp;loop=1&amp;playlist=nfR59w-WDK4&amp;playsinline=1&amp;cc_load_policy=0&amp;enablejsapi=1&amp;disablekb=1&amp;iv_load_policy=3&amp;rel=0" title="Paisagens da Serra Gaúcha" allow="autoplay; encrypted-media" tabindex="-1" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+  </div>
+  <div class="hero-shade"></div>
+  <button class="hero-sound" type="button" disabled aria-label="Ativar som do vídeo" aria-pressed="false">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M11 5 6 9H3v6h3l5 4V5Z"/><path class="sound-off" d="m16 9 6 6m0-6-6 6"/><path class="sound-on" d="M15 8a6 6 0 0 1 0 8m3-11a10 10 0 0 1 0 14"/></svg>
+    <span>Ativar som</span>
+  </button>
+  <p class="hero-video-status" hidden role="status">Não foi possível carregar o vídeo. <a href="https://www.youtube.com/watch?v=nfR59w-WDK4" target="_blank" rel="noopener noreferrer">Assistir no YouTube</a></p>
+  <div class="hero-content">
+    
+    <h1 id="hero-title">Natal Luz<br />em Gramado.<br /><em>A magia começa no caminho</em></h1>
+    <p class="hero-description">Aproveite os espetáculos e descubra Gramado com tranquilidade. Conte com a Ts Gramado Tur para seus passeios e transfers.</p>
+  </div>
+  <svg class="hero-wave text-primary-50 dark:text-dark-900" viewBox="0 0 1440 100" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+    <path d="M0 45C180 0 360 0 540 45S900 90 1080 45S1320 0 1440 30V100H0Z" fill="currentColor" />
+  </svg>
+</section>
+<div class="hero-services">
+  <div class="service-links">
+    <a href="/passeios"><span class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="4" y="5" width="16" height="16" rx="2"/><path d="M8 3v4m8-4v4M4 11h16M8 15h2m4 0h2M8 18h2"/></svg></span><span><strong>Passeios e Transfer</strong><small>Escolha seu passeio</small></span><span aria-hidden="true">›</span></a>
+    <a href="/ingressos"><span class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M3 5h18v5a2 2 0 0 0 0 4v5H3v-5a2 2 0 0 0 0-4V5Z"/><path d="M14 5v3m0 3v2m0 3v3"/></svg></span><span><strong>Ingressos e Atrações</strong><small>Viva novas experiências</small></span><span aria-hidden="true">›</span></a>
+  </div>
+  <div class="hero-search-wrap">
+    <label class="hero-search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="10" cy="10" r="6"/><path d="m15 15 6 6"/></svg><span class="sr-only">Pesquisar serviços</span><input id="hero-search-input" type="search" placeholder="Pesquisar serviços..." autocomplete="off" aria-controls="hero-search-results" /></label>
+    <div id="hero-search-results" class="hidden hero-results" aria-live="polite"></div>
+  </div>
+</div>
+<style>
+  .hero-wave{position:absolute;left:0;bottom:-1px;width:100%;height:80px;z-index:4;pointer-events:none;display:block}
+  @media(max-width:767px){.hero-wave{height:44px}}
+  .home-hero{position:relative;min-height:760px;display:flex;align-items:center;background:var(--clr-primary-950);isolation:isolate;overflow:hidden}
+  .hero-poster{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}.hero-video{position:absolute;inset:0;z-index:1;overflow:hidden;pointer-events:none}.hero-video iframe{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);border:0;max-width:none;width:max(100%,1352px);height:max(100%,56.25vw);opacity:0;transition:opacity .4s}.home-hero.video-playing .hero-video iframe{opacity:1}
+  .hero-video-status{position:absolute;left:20px;right:20px;bottom:35px;z-index:3;color:white;font-size:12px}.hero-video-status a{text-decoration:underline}.hero-sound[hidden]{display:none}.hero-sound:disabled{opacity:.5;cursor:wait}.hero-sound{position:absolute;right:24px;bottom:70px;z-index:3;display:flex;align-items:center;gap:8px;padding:10px 13px;border:1px solid #ffffff70;border-radius:999px;background:color-mix(in srgb, var(--clr-primary-950) 60.0%, transparent);color:white;font-size:12px;cursor:pointer;backdrop-filter:blur(8px)}.hero-sound svg{width:19px;height:19px}.hero-sound:hover{background:color-mix(in srgb, var(--clr-primary-950) 86.67%, transparent)}.hero-sound:focus-visible{outline:3px solid white;outline-offset:4px}.hero-sound .sound-on{display:none}.hero-sound[aria-pressed="true"] .sound-on{display:block}.hero-sound[aria-pressed="true"] .sound-off{display:none}
+  @media(max-width:767px){.hero-sound{right:16px;bottom:46px}}
+  .hero-photo,.hero-shade{position:absolute;inset:0;width:100%;height:100%;z-index:2;pointer-events:none}.hero-photo{object-fit:cover;object-position:center 38%}
+  .hero-shade{background:linear-gradient(90deg,rgba(0,18,56,.58),rgba(0,18,56,.28) 39%,transparent 70%),linear-gradient(0deg,rgba(0,18,56,.5),transparent 40%)}
+  .hero-content{position:relative;z-index:3;width:min(1440px,100%);margin:auto;padding:150px 48px 110px;color:white;text-shadow:0 2px 12px rgba(0,0,0,.45)}
+  .hero-eyebrow{font-size:12px;letter-spacing:.2em;font-weight:700;margin-bottom:22px;color:var(--clr-cream-100)}
+  h1{font-size:clamp(48px,4.8vw,76px);font-weight:900;line-height:1.04;letter-spacing:-.045em;max-width:700px;margin:0}
+  h1 em{display:inline-block;color:var(--clr-accent-500);margin-top:16px}
+  .hero-description{max-width:530px;font-size:18px;line-height:1.75;margin:28px 0 0;color:var(--clr-cream-50)}
+  .hero-services{position:relative;z-index:20;width:min(720px,calc(100% - 32px));margin:24px auto 40px;background:white;border-radius:26px;padding:16px;box-shadow:0 12px 45px color-mix(in srgb, var(--clr-primary-950) 7.06%, transparent);color:var(--clr-primary-700)}
+  .service-links{display:grid;grid-template-columns:1fr 1fr;margin-bottom:12px}.service-links a{display:flex;align-items:center;gap:14px;padding:18px 14px;border-radius:12px}.service-links a:hover{background:var(--clr-primary-50)}.service-links a+a{border-left:1px solid var(--clr-dark-200)}.service-links a>span:last-child{margin-left:auto;font-size:22px}.service-icon{display:grid;place-items:center;flex-shrink:0;width:48px;height:48px;background:var(--clr-primary-50);border-radius:12px}.service-icon svg{width:22px;height:22px}.service-links strong{display:block;font-size:13px}.service-links small{display:block;margin-top:6px;font-size:13px;color:var(--clr-dark-500)}
+  .hero-search-wrap{position:relative}.hero-search{display:flex;align-items:center;gap:12px;background:var(--clr-primary-700);color:white;border-radius:17px;padding:19px}.hero-search:focus-within{outline:3px solid var(--clr-accent-400);outline-offset:3px}.hero-search svg{width:20px;height:20px;flex-shrink:0}.hero-search input{width:100%;background:transparent;border:0;outline:none;color:white;font-size:15px}.hero-search input::placeholder{color:#ffffffdc}.hero-results{position:absolute;top:calc(100% + 8px);left:0;right:0;max-height:320px;overflow:auto;background:white;border:1px solid var(--clr-dark-200);border-radius:16px;box-shadow:0 12px 35px color-mix(in srgb, var(--clr-primary-950) 12.55%, transparent)}
+  @media(max-width:767px){.home-hero{min-height:750px;align-items:flex-end}.hero-photo{object-position:57% top}.hero-shade{background:linear-gradient(0deg,rgba(0,18,56,.65),rgba(0,18,56,.38) 38%,transparent 80%)}.hero-content{padding:330px 20px 100px}.hero-eyebrow{font-size:10px;letter-spacing:.13em;margin-bottom:16px}h1{font-size:clamp(39px,9.7vw,60px)}h1 em{margin-top:12px}.hero-description{font-size:15px;line-height:1.8;margin-top:20px}.hero-services{padding:12px;width:calc(100% - 24px);border-radius:24px;margin-top:16px}.service-links a{padding:14px 6px;gap:8px}.service-icon{width:36px;height:42px}.service-links strong{font-size:11px}.service-links small{font-size:10px}.service-links a>span:last-child{font-size:18px}.hero-search{padding:18px 14px}}
+  @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto}}
+</style>
+
+<script is:inline>
+  (() => {
+    const hero = document.querySelector('.home-hero');
+    const frame = document.querySelector('#hero-video-player');
+    const sound = document.querySelector('.hero-sound');
+    const status = document.querySelector('.hero-video-status');
+    if (!hero || !frame || !sound || !status) return;
+
+    const resize = () => {
+      const width = Math.max(hero.clientWidth, hero.clientHeight * 16 / 9);
+      frame.style.width = `${width}px`;
+      frame.style.height = `${width * 9 / 16}px`;
+    };
+    resize();
+    new ResizeObserver(resize).observe(hero);
+    const url = new URL(frame.dataset.src);
+    url.searchParams.set('origin', window.location.origin);
+    url.searchParams.set('widget_referrer', window.location.href);
+    frame.referrerPolicy = 'strict-origin-when-cross-origin';
+    frame.src = url.toString();
+
+    let player;
+    let blocked = false;
+    let autoplayAttempts = 0;
+    let autoplayTimer;
+    let hasPlayed = false;
+    const startAutomatically = () => {
+      if (!player || hasPlayed || autoplayAttempts >= 8) return;
+      autoplayAttempts += 1;
+      player.mute();
+      player.playVideo();
+      clearTimeout(autoplayTimer);
+      autoplayTimer = window.setTimeout(startAutomatically, 1500);
+    };
+    const updateSound = (audible = !player.isMuted()) => {
+      sound.setAttribute('aria-pressed', String(audible));
+      const label = blocked ? 'Reproduzir v\u00eddeo' : audible ? 'Desativar som' : 'Ativar som';
+      sound.setAttribute('aria-label', label);
+      sound.querySelector('span').textContent = label;
+    };
+    const failed = (code) => {
+      const message = typeof code === 'number'
+        ? `N\u00e3o foi poss\u00edvel carregar o v\u00eddeo (YouTube: ${code}). `
+        : 'A conex\u00e3o com o YouTube n\u00e3o respondeu. ';
+      status.firstChild.textContent = message;
+      hero.classList.remove('video-playing');
+      status.hidden = false;
+      sound.hidden = true;
+    };
+    const timeout = window.setTimeout(() => {
+      if (!hasPlayed) failed();
+    }, 60000);
+    const initialize = () => {
+      player = new window.YT.Player(frame, {
+        events: {
+          onReady: (event) => {
+            player = event.target;
+            startAutomatically();
+            sound.disabled = false;
+            updateSound();
+          },
+          onStateChange: (event) => {
+            if (event.data === 1) {
+              hasPlayed = true;
+              clearTimeout(autoplayTimer);
+              clearTimeout(timeout);
+              hero.classList.add('video-playing');
+              status.hidden = true;
+              sound.hidden = false;
+              blocked = false;
+              updateSound();
+            }
+            if (event.data === 0) player.playVideo();
+          },
+          onAutoplayBlocked: () => {
+            startAutomatically();
+            clearTimeout(timeout);
+            blocked = true;
+            sound.disabled = false;
+            sound.hidden = false;
+            updateSound();
+          },
+          onError: (event) => {
+            clearTimeout(timeout);
+            clearTimeout(autoplayTimer);
+            hasPlayed = true;
+            console.warn('Hero YouTube player error:', event.data);
+            failed(event.data);
+          },
+        },
+      });
+    };
+    sound.addEventListener('click', () => {
+      if (!player || sound.disabled) return;
+      const audible = !blocked && player.isMuted();
+      if (blocked) {
+        player.mute();
+        player.playVideo();
+      } else if (player.isMuted()) {
+        player.unMute();
+        player.setVolume(70);
+      } else player.mute();
+      updateSound(audible);
+    });
+    document.addEventListener('visibilitychange', () => {
+      if (!document.hidden && !hasPlayed) {
+        autoplayAttempts = 0;
+        startAutomatically();
+      }
+    });
+    if (window.YT && window.YT.Player) initialize();
+    else {
+      const previousReady = window.onYouTubeIframeAPIReady;
+      window.onYouTubeIframeAPIReady = () => {
+        if (previousReady) previousReady();
+        initialize();
+      };
+      if (!document.querySelector('script[src="https://www.youtube.com/iframe_api"]')) {
+        const script = document.createElement('script');
+        script.src = 'https://www.youtube.com/iframe_api';
+        script.async = true;
+        script.onerror = () => { clearTimeout(timeout); failed(); };
+        document.head.appendChild(script);
+      }
+    }
+  })();
+</script>

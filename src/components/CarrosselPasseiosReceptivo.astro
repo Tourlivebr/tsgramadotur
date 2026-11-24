@@ -1,0 +1,293 @@
+---
+const passeiosReceptivo = [
+{
+    "id":  13,
+    "title":  "Transfer Grande Desfile de Natal",
+    "subtitle":  "Translado para o espetáculo do Natal Luz no Expogramado. Ingresso não incluso.",
+    "category":  "TRANSFER",
+    "image":  "/images/grande-desfile-de-natal/desfile-01.webp",
+    "price1":  150,
+    "label1":  "1 a 4 pessoas",
+    "price2":  200,
+    "label2":  "5 a 6 pessoas",
+    "slug":  "transfer-grande-desfile-de-natal",
+    "whatsappText":  "Olá! Quero reservar o Transfer Grande Desfile de Natal: 1 a 4 pessoas R$ 150,00; 5 a 6 pessoas R$ 200,00."
+},
+{
+    "id":  12,
+    "title":  "Transfer Nativitaten",
+    "subtitle":  "Translado para o espetáculo do Natal Luz no Serra Park. Ingresso não incluso.",
+    "category":  "TRANSFER",
+    "image":  "/images/nativitaten/nativitaten-01.webp",
+    "price1":  300,
+    "label1":  "1 a 4 pessoas",
+    "price2":  350,
+    "label2":  "5 a 6 pessoas",
+    "slug":  "transfer-nativitaten",
+    "whatsappText":  "Olá! Quero reservar o Transfer Nativitaten: 1 a 4 pessoas R$ 300,00; 5 a 6 pessoas R$ 350,00."
+},
+  {
+    "id": 1,
+    "title": "Transfer IDA e VOLTA • Porto Alegre / Gramado ou Canela",
+    "subtitle": "Translado executivo de ida e volta entre Porto Alegre e Gramado/Canela",
+    "category": "TRANSFER",
+    "image": "/images/Transfer/transfer.png",
+    "price1": 680,
+    "label1": "1 a 4 pessoas",
+    "price2": 850,
+    "label2": "5 a 6 pessoas",
+    "slug": "transfer-ida-volta-porto-alegre",
+    "whatsappText": "Olá! Quero reservar o Transfer IDA e VOLTA Porto Alegre / Gramado ou Canela."
+  },
+  {
+    "id": 2,
+    "title": "City Tour Privativo",
+    "subtitle": "Roteiro personalizado com motorista/guia",
+    "category": "CITY TOUR",
+    "image": "/images/transfer11.jpg",
+    "price1": 380,
+    "label1": "1 a 4 pessoas",
+    "price2": 480,
+    "label2": "5 a 6 pessoas",
+    "slug": "city-tour-privativo",
+    "whatsappText": "Olá! Quero reservar o City Tour Privativo."
+  },
+  {
+    "id": 3,
+    "title": "Transporte Olivas",
+    "subtitle": "Translado para as Olivas de Gramado",
+    "category": "TRANSFER",
+    "image": "/images/olivas/olivas_card.jpg",
+    "price1": 200,
+    "label1": "1 a 4 pessoas",
+    "price2": 260,
+    "label2": "5 a 6 pessoas",
+    "slug": "transporte-olivas",
+    "whatsappText": "Olá! Quero reservar o Transporte para as Olivas."
+  },
+  {
+    "id": 4,
+    "title": "Transporte Jolimont",
+    "subtitle": "Translado para a Vinícola Jolimont",
+    "category": "TRANSFER",
+    "image": "/images/jolimont/jolimont.jpg",
+    "price1": 200,
+    "label1": "1 a 4 pessoas",
+    "price2": 260,
+    "label2": "5 a 6 pessoas",
+    "slug": "transporte-jolimont",
+    "whatsappText": "Olá! Quero reservar o Transporte para a Jolimont."
+  },
+  {
+    "id": 5,
+    "title": "Transporte Sky Glass",
+    "subtitle": "Translado para a Skyglass Canela • Espera de até 1h30",
+    "category": "TRANSFER",
+    "image": "/images/skyglass/skyglass.jpg",
+    "price1": 200,
+    "label1": "1 a 4 pessoas",
+    "price2": 260,
+    "label2": "5 a 6 pessoas",
+    "slug": "transporte-sky-glass",
+    "whatsappText": "Olá! Quero reservar o Transporte para Sky Glass."
+  },
+  {
+    "id": 11,
+    "title": "Transporte Parque do Caracol",
+    "subtitle": "Translado para o Parque do Caracol • Espera de até 1h30",
+    "category": "TRANSFER",
+    "image": "/images/Transfer/transfer.png",
+    "price1": 180,
+    "label1": "1 a 4 pessoas",
+    "price2": 240,
+    "label2": "5 a 6 pessoas",
+    "slug": "transporte-parque-do-caracol",
+    "whatsappText": "Olá! Quero reservar o transporte para o Parque do Caracol."
+  },
+  {
+    "id": 6,
+    "title": "Bondinhos Transporte",
+    "subtitle": "Translado para os Bondinhos Aéreos • Espera de até 1h30",
+    "category": "TRANSFER",
+    "image": "/images/bondinhos.avif",
+    "price1": 180,
+    "label1": "1 a 4 pessoas",
+    "price2": 240,
+    "label2": "5 a 6 pessoas",
+    "slug": "bondinhos-transporte",
+    "whatsappText": "Olá! Quero reservar o Transporte dos Bondinhos."
+  },
+  {
+    "id": 7,
+    "title": "City Tour Nova Petrópolis",
+    "subtitle": "Roteiro completo por Nova Petrópolis",
+    "category": "CITY TOUR",
+    "image": "/images/Nova_Petropolis.jpg",
+    "price1": 380,
+    "label1": "1 a 4 pessoas",
+    "price2": 480,
+    "label2": "5 a 6 pessoas",
+    "slug": "city-tour-nova-petropolis",
+    "whatsappText": "Olá! Quero reservar o City Tour de Nova Petrópolis."
+  },
+  {
+    "id": 8,
+    "title": "Lumni Transporte",
+    "subtitle": "Translado para a experiência Lumni • Espera de até 2h",
+    "category": "TRANSFER",
+    "image": "/images/lumini.webp",
+    "price1": 180,
+    "label1": "1 a 4 pessoas",
+    "price2": 240,
+    "label2": "5 a 6 pessoas",
+    "slug": "lumni-transporte",
+    "whatsappText": "Olá! Quero reservar o Transporte Lumni."
+  },
+  {
+    "id": 9,
+    "title": "Trem Maria Fumaça - Privativo",
+    "subtitle": "Passeio de Maria Fumaça pela Serra Gaúcha",
+    "category": "TREM",
+    "image": "/images/maria-fumaca/fumaca01.jpg",
+    "price1": 1499,
+    "label1": "2 pessoas",
+    "price2": 2999,
+    "label2": "6 pessoas",
+    "slug": "maria-fumaca",
+    "whatsappText": "Olá! Quero reservar o passeio de Trem Maria Fumaça.",
+    "price3": 2199,
+    "label3": "4 pessoas"
+  },
+  {
+    "id": 10,
+    "title": "Tour Vinhos e Sabores",
+    "subtitle": "Vinícola Jolimont + Chaulet + Catedral de Pedra + Chocolate Gramadense",
+    "category": "CITY TOUR",
+    "image": "/images/jolimont/Jolimont1.png",
+    "price1": 229,
+    "label1": "Por pessoa",
+    "price2": 229,
+    "label2": "Por pessoa",
+    "slug": "tour-vinhos-e-sabores",
+    "whatsappText": "Olá! Quero reservar o Tour Vinhos e Sabores."
+  }
+].sort((a, b) => Number(b.category === 'TRANSFER') - Number(a.category === 'TRANSFER'));
+---
+
+<section id="passeios-receptivo" class="relative py-12 lg:py-16">
+  <div class="container mx-auto px-4">
+    <div class="text-center">
+      <div class="flex items-center justify-center mb-6">
+        <h2 class="text-3xl lg:text-4xl font-bold text-dark-900 dark:text-white mx-8">
+          Translados e <span class="text-primary-600 dark:text-primary-400">Passeios</span>
+        </h2>
+      </div>
+    </div>
+
+    <div class="relative z-20">
+      <div>
+        <div id="passeios-receptivo-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+          {passeiosReceptivo.map((passeio, index) => (
+            <div data-passeio-card hidden={index >= 4}>
+              <div class="bg-white dark:bg-dark-800 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group h-full flex flex-col">
+                <div class="relative h-44 overflow-hidden">
+                  <img 
+                    src={passeio.image} 
+                    alt={passeio.title}
+                    class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    loading="lazy"
+                  />
+                  <div class="absolute top-3 left-3">
+                    <span class="bg-accent-500 text-dark-950 px-2 py-1 rounded-full text-xs font-semibold">
+                      {passeio.category}
+                    </span>
+                  </div>
+                </div>
+
+                <div class="p-4 flex-1 flex flex-col">
+                  <div class="mb-3">
+                    <h3 class="font-bold text-dark-900 dark:text-white text-lg mb-1 group-hover:text-primary-600 transition-colors">
+                      {passeio.title}
+                    </h3>
+                    <p class="text-dark-600 dark:text-dark-400 text-sm">
+                      {passeio.subtitle}
+                    </p>
+                  </div>
+
+                  <div class="mt-auto pt-3 border-t border-dark-100 dark:border-dark-700 space-y-3">
+                    <div class="grid grid-cols-2 gap-3">
+                    {[{label:passeio.label1,preco:passeio.price1}, ...('price3' in passeio ? [{label:passeio.label3,preco:passeio.price3}] : []), {label:passeio.label2,preco:passeio.price2}].map((faixa) => (
+                      <div class="bg-dark-50 dark:bg-dark-700/50 rounded-lg p-2 text-center">
+                        <p class="text-xs text-dark-500 dark:text-dark-400 font-medium">{faixa.label}</p>
+                        <p class="text-lg font-bold text-primary-600 mt-1">{faixa.preco.toLocaleString('pt-BR', {style:'currency',currency:'BRL'})}</p>
+                      </div>
+                    ))}
+                  </div>
+                    <a href={`/passeio/${passeio.slug}`} class="w-full bg-primary-600 hover:bg-primary-700 text-white font-semibold py-3 px-4 rounded-full transition-colors duration-200 block text-center text-base shadow-md">RESERVE AGORA</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+    </div>
+
+    <div class="flex flex-wrap justify-center gap-4 mt-8 pb-4 relative z-20">
+      <button
+        id="ver-mais-passeios-receptivo"
+        type="button"
+        aria-controls="passeios-receptivo-grid"
+        hidden={passeiosReceptivo.length <= 4}
+        class="bg-primary-700 hover:bg-primary-800 text-white font-bold py-3 px-[30px] rounded-full transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent-500"
+      >
+        Ver mais <span class="ml-3" aria-hidden="true">&#8594;</span>
+      </button>
+      <button
+        id="ver-menos-passeios-receptivo"
+        type="button"
+        aria-controls="passeios-receptivo-grid"
+        hidden
+        class="bg-primary-700 hover:bg-primary-800 text-white font-bold py-3 px-[30px] rounded-full transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent-500"
+      >
+        Ver menos <span class="ml-3" aria-hidden="true">&#8593;</span>
+      </button>
+    </div>
+  </div>
+
+</section>
+
+<script>
+  function initPasseiosReceptivo() {
+    const grid = document.getElementById('passeios-receptivo-grid');
+    const moreButton = document.getElementById('ver-mais-passeios-receptivo');
+    const lessButton = document.getElementById('ver-menos-passeios-receptivo');
+    if (!grid || !moreButton || !lessButton || moreButton.dataset.initialized) return;
+
+    moreButton.dataset.initialized = 'true';
+    const cards = Array.from(grid.querySelectorAll<HTMLElement>('[data-passeio-card]'));
+    let visibleCount = cards.filter((card) => !card.hidden).length;
+
+    function updateCards() {
+      cards.forEach((card, index) => { card.hidden = index >= visibleCount; });
+      moreButton.hidden = visibleCount >= cards.length;
+      lessButton.hidden = visibleCount <= 4;
+    }
+
+    moreButton.addEventListener('click', () => {
+      visibleCount = Math.min(cards.length, visibleCount + 4);
+      updateCards();
+      if (moreButton.hidden) lessButton.focus({ preventScroll: true });
+    });
+
+    lessButton.addEventListener('click', () => {
+      visibleCount = Math.max(4, visibleCount - 4);
+      updateCards();
+      if (lessButton.hidden) moreButton.focus({ preventScroll: true });
+    });
+  }
+
+  initPasseiosReceptivo();
+  document.addEventListener('astro:page-load', initPasseiosReceptivo);
+</script>
